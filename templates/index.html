@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+Hello, My name is {{my_name}}!
+{% for socmed in social_media %}
+<div>
+    <a href="{{ socmed.link }}" target="_blank">{{ socmed.title }}</a>
+</div>
+{% endfor %}
+{% endblock %}

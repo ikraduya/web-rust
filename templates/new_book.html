@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form action="" method="POST">
+    <div>
+        <label for="title">Book title:</label>
+        <input type="text" name="title" id="title">
+    </div>
+    <div>
+        <label for="title">Author:</label>
+        <input type="text" name="author" id="author">
+    </div>
+    <div>
+        <label for="review">Review:</label>
+        <input type="textarea" name="review" id="review">
+    </div>
+    <div>
+        <label for="rating">Rating:</label>
+        <input type="number" name="rating" id="rating">
+    </div>
+    <input type="submit" value="Add review">
+</form>
+{% endblock %}

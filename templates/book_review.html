@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div id="bookReview">
+    <ul>
+        {% for book in book_reviews %}
+        <li>
+            <div id="coverImage">
+                <img src="https://picsum.photos/100/150" alt="">
+            </div>
+            <div id="description">
+                <a id="bookTitle" href="#">{{ book.title }}</a>
+                <div id="bookAuthor">
+                    <span>by</span>
+                    <span>{{ book.author }}</span>
+                </div>
+            </div>
+            <div id="review">
+                <p>Review: {{ book.review }}</p>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

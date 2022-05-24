@@ -1,0 +1,15 @@
+[package]
+name = "ikraduya_web"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4"
+tera = "1.15"
+dotenv = "0.15"
+serde = { version = "1.0", features = ["derive"] } 
+diesel = { version = "1.4", features = ["postgres", "chrono"] }
+chrono = { version = "0.4", features = ["serde"] }
+actix-identity = "0.4"
