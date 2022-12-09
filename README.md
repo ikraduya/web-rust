@@ -1,5 +1,4 @@
-# Ikraduya's personal website
-Created with Rust
+# Rust Website
 
 ## Requirements
 - postgresql `apt-get install postgresql libpq`
